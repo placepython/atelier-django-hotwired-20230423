@@ -1,0 +1,14 @@
+{% extends 'base.html' %}   
+
+{% block title %}Liste des tâches | WePynaire{% endblock title %}
+
+{% block content %}
+<h1>Votre liste de tâches</h1>
+{% for task in tasks %}
+    {% if loop.first %}<ul>{% endif %}
+        <li>{{ task.due_date|date:"d/m/Y" }}: <a href="{% url 'tasks:task-detail' pk=task.pk %}">{{ task.title }}</a></li>
+    {% if loop.last %}</ul>{% endif %}
+{% empty %}
+    <p>Vous n'avez pas encore de tâches enregistrées</p>
+{% endfor %}
+{% endblock content %}

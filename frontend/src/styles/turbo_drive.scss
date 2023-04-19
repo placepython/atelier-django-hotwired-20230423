@@ -1,0 +1,11 @@
+@import "variables.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+
+[data-turbo-preview] body {
+  opacity: 0.5;
+}
+
+.turbo-progress-bar {
+  background-color: #e08631;
+  height: 20px;
+}

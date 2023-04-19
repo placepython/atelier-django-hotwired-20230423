@@ -1,0 +1,22 @@
+{
+  "entrypoints": {
+    "turbo_drive": {
+      "assets": {
+        "js": [
+          "http://localhost:9091/js/runtime.js",
+          "http://localhost:9091/js/vendors-node_modules_hotwired_turbo_dist_turbo_es2017-esm_js-node_modules_mini-css-extract-pl-b8eb91.js",
+          "http://localhost:9091/js/turbo_drive.js"
+        ],
+        "css": [
+          "http://localhost:9091/css/turbo_drive.css"
+        ]
+      }
+    }
+  },
+  "js/vendors-node_modules_hotwired_turbo_dist_turbo_es2017-esm_js-node_modules_mini-css-extract-pl-b8eb91.js": "http://localhost:9091/js/vendors-node_modules_hotwired_turbo_dist_turbo_es2017-esm_js-node_modules_mini-css-extract-pl-b8eb91.js",
+  "runtime.js": "http://localhost:9091/js/runtime.js",
+  "turbo_drive.css": "http://localhost:9091/css/turbo_drive.css",
+  "turbo_drive.js": "http://localhost:9091/js/turbo_drive.js",
+  "vendors/.gitkeep": "http://localhost:9091/vendors/.gitkeep",
+  "vendors/images/.gitkeep": "http://localhost:9091/vendors/images/.gitkeep"
+}

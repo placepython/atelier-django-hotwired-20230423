@@ -1,0 +1,17 @@
+{% extends "base.html" %} 
+
+{% load crispy_forms_tags %} 
+
+{% block title %}Mise à jour d'une tâche | WePynaire{% endblock title %}
+
+{% block content %}
+<div class="container">
+  <h1>Mise à jour</h1>
+  <form method="post">
+    {% csrf_token %} 
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-primary">Mettre à jour</button>
+    <a href="{% url 'tasks:task-list' %}" class="btn btn-danger">Abandonner</a>
+  </form>
+</div>
+{% endblock %}

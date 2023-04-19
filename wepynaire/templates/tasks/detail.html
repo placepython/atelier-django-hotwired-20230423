@@ -1,0 +1,22 @@
+{% extends "base.html" %} 
+
+{% block title %} Detail d'un tâche | WePynaire{% endblock title %}
+
+{% block content %}
+<div class="container">
+  <h1>Voici le détail de votre tâche</h1>
+  <dl>
+    <dt>Titre</dt>
+    <dd>{{ task.title }}</dd>
+
+    <dt>Date</dt>
+    <dd>{{ task.due_date|date:"d/m/Y" }}</dd>
+
+  </dl>
+  <div class="d-flex">
+    <a href="{% url 'tasks:task-update' pk=task.pk %}" class="btn btn-primary">Modifier</a>
+    <a href="{% url 'tasks:task-delete' pk=task.pk %}" class="btn btn-danger">Supprimer</a>
+  </div>
+  
+</div>
+{% endblock %}
